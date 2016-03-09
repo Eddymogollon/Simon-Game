@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>The Simon Game</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+<div class="circle">
+  <div class="green"></div>
+  <div class="red"></div>
+  <div class="yellow"></div>
+  <div class="blue"></div>
+  <!-- Game Controls-->
+  <div class="game">
+    <div>
+      <h2>Simon</h2>
+    </div>
+    <div class="controls">
+      <div class="mycontrols">
+        <span class="counter"><p id="counter-text">--</p></span>
+        <p>COUNT</p>
+      </div>
+      <div class="mycontrols">
+        <span class="start"></span>
+        <p>START</p>
+      </div>
+      <div class="mycontrols">
+        <span class="strict-switch"></span>
+        <span class="strict"></span>
+        <p>STRICT</p>
+      </div>
+    </div>
+    <div class="switch-control">
+      <h3>OFF</h3>
+      <span class="switch"><span class="off"></span></span>
+      <h3>ON</h3>
+    </div>
+  </div>
+
+  <!-- Audios for the buttons -->
+  <audio id="audio-green" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+  <audio id="audio-red" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+  <audio id="audio-yellow" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+  <audio id="audio-blue" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+</body>
+
+</html>
